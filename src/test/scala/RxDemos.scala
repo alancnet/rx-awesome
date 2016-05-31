@@ -11,7 +11,7 @@ import scala.concurrent.duration._
   * Created by alco on 5/27/16.
   */
 class RxDemos extends FlatSpec with Matchers {
-  "Cold Observables" should "share should prevent projection work from being repeated" in {
+  "Share" should "prevent projection work from being repeated" in {
     val w = new Waiter()
 
     val workCounter = new AtomicInteger(0)
