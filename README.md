@@ -5,7 +5,7 @@ A demonstration of different Rx techniques to solve common problems.
 
 ## RxDemos
 
-### Share" should prevent projection work from being repeated
+### Share should prevent projection work from being repeated
 
 Normally, when you take a stream and project on it (like `stream.map(_ * 2)`), the work is repeated for each subscriber.
 If you prefer the work not be repeated, you can use `.share`. This test demonstrates share by counting the number of 
